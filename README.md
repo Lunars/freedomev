@@ -6,7 +6,7 @@ Download here: https://www.freedomev.com/FreedomEV-1.0-usbstickimage-extract-to-
 If you mounted the stick to /mnt/stick:
 ```
 cd /mnt/stick
-tar xvf ~/Downloads/FreedomEV-1.0-usbstickimage-extract-to-an-ext4-filesystem.tgz --no-same-owner
+tar xvf ~/FreedomEV-1.0-usbstickimage-extract-to-an-ext4-filesystem.tgz --no-same-owner
 mv freedomev-1.0-rootfs/* .
 mv freedomev-1.0-rootfs/.git .
 sync
