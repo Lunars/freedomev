@@ -6,6 +6,9 @@ Download here: https://www.freedomev.com/FreedomEV-1.0-usbstickimage-extract-to-
 If you mounted the stick to /mnt/stick:
 ```
 curl https://www.freedomev.com/FreedomEV-1.0-usbstickimage-extract-to-an-ext4-filesystem.tgz -o ~/ev.tgz
+sudo mkfs.ext4 /dev/sda1
+sudo mount /dev/sda1 /mnt/stick
+sudo chown root: /mnt/stick
 cd /mnt/stick
 tar xvf ~/ev.tz --no-same-owner
 mv freedomev-1.0-rootfs/* .
