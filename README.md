@@ -10,9 +10,10 @@ sudo mkfs.ext4 /dev/sda1
 sudo mount /dev/sda1 /mnt/stick
 sudo chown root: /mnt/stick
 cd /mnt/stick
-tar xvf ~/ev.tz
-mv freedomev-1.0-rootfs/* .
-mv freedomev-1.0-rootfs/.git .
+sudo tar xvf ~/ev.tgz
+sudo mv freedomev-1.0-rootfs/freedomev-1.0 .
+sudo mv freedomev-1.0-rootfs/.git .
+sudo rm -r freedomev-1.0-rootfs
 sync
 cd 
 umount /mnt/stick
